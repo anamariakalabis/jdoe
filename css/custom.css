@@ -1,0 +1,115 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #EEE;
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1e1e1e;
+    font-weight: 600;
+}
+
+strong {
+    color: #000000;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+#services .card:hover i {
+    color: #cde1f8;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+#back-to-top:hover {
+    background-color: #298eff;
+}
+
+.progress {
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    background-color: #0d6efd;
+}
+
+
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.btn {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeInUp 1s ease-out;
+}
+
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
